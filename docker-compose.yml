@@ -1,0 +1,14 @@
+services:
+  email-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: email-builder
+    ports:
+      - "5173:5173"
+    networks:
+      - caddy
+
+networks:
+  caddy:
+    external: true
