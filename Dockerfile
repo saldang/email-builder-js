@@ -1,4 +1,4 @@
-FROM node:22-alpine AS builder
+FROM node:22-alpine
 COPY . .
 
 WORKDIR /packages/editor-sample
